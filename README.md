@@ -12,5 +12,9 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * cookie-parser : interpret cookie to fill the req.cookies object
 * session : support persistent session, Express-session is easy to tracking user's behavior
 
+### Mongoose
+* In connect, Check useNewUrlParser.(if using version >= 4.0)
+* First Set Schema,
+
 ***
 ## Created By Cheshire. Updated 18-08-18
