@@ -14,7 +14,7 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 
 ### Mongoose
 * In connect, Check useNewUrlParser.(if using version >= 4.0)
-* First Set Schema,
+* First Set Schema and Register it, Second Set Controller, Last Set Route and register route in express
 
 ***
 ## Created By Cheshire. Updated 18-08-18
