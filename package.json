@@ -1,0 +1,26 @@
+{
+  "name": "cheshire_blog",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "compression": "^1.7.3",
+    "body-parser": "^1.18.3",
+    "method-override": "^3.0.0"
+  },
+  "description": "MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nephelai/Cheshire_Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nephelai/Cheshire_Blog/issues"
+  },
+  "homepage": "https://github.com/Nephelai/Cheshire_Blog#readme"
+}
