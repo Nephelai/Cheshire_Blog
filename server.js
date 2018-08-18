@@ -1,3 +1,6 @@
+// process.env.NODE_ENV is not setting. then set 'development'
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
 var express = require('./config/express');
 
 var app = express();

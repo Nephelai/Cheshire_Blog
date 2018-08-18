@@ -1,3 +1,13 @@
 exports.render = function (req, res) {
-    res.send('Hello Cheshire!');
+    if(req.session.lastVisit) {
+        console.log(req.session.lastVisit);
+    }
+    req.session.lastVisit = new Date();
+
+    //res.send('Hello Cheshire!');
+    // Used render. how about json.
+    res.render('index', {
+        title: 'Hello Cheshire'
+    })
+    //Only work render.
 };

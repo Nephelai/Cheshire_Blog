@@ -6,7 +6,9 @@
     "morgan": "^1.9.0",
     "compression": "^1.7.3",
     "body-parser": "^1.18.3",
-    "method-override": "^3.0.0"
+    "method-override": "^3.0.0",
+    "ejs": "^2.6.1",
+    "express-session": "^1.15.6"
   },
   "description": "MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)",
   "main": "server.js",
