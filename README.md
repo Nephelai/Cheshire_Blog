@@ -16,5 +16,18 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * In connect, Check useNewUrlParser.(if using version >= 4.0)
 * First Set Schema and Register it, Second Set Controller, Last Set Route and register route in express
 
+### Mongoose Schema
+* trim : Remove space at String.
+* Setting Data type already. using 'set' function, There is 'get' function in withdraw
+* Add Virtual attributes, Using Variable.
+* Model verification. using required, match function. in role, using enum
+* .length attribute can set the length words
+
+### Mongoose Middleware
+* can steal the init, validate, save, remove of Instance method. pre, post middleware
+* pre middle ware do before the some operation. example. before save data, check the id in model.
+* post middle ware do after the some operation. example. after save data, logging data.
+* Mongoose's DBref is used like 'join' operation. manage this like inheritance.
+
 ***
 ## Created By Cheshire. Updated 18-08-20
