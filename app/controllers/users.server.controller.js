@@ -16,7 +16,7 @@ var getErrorMessage = function (err) {
         }
     } else {
         for(var errName in err.errors) {
-            if(err.error(errName).message) message = err.errors[errName].message;
+            if(err.errors[errName].message) message = err.errors[errName].message;
         }
     }
 
@@ -27,7 +27,7 @@ exports.renderSignin = function (req, res, next) {
     if(!req.user) {
         res.render('signin', {
             title: 'Sign-in Form',
-            message: req.flash('error') || req.flash('info')
+            messages: req.flash('error') || req.flash('info')
             // in HTML(ejs) Class 'flash' connected this.
         });
     } else return res.redirect('/');
@@ -37,7 +37,7 @@ exports.renderSignup = function (req, res, next) {
     if(!req.user) {
         res.render('signup', {
             title: 'Sign-up Form',
-            message: req.flash('error')
+            messages: req.flash('error')
         });
     } else return res.redirect('/');
 };

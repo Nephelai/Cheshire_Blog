@@ -7,7 +7,8 @@ exports.render = function (req, res) {
     //res.send('Hello Cheshire!');
     // Used render. how about json.
     res.render('index', {
-        title: 'Hello Cheshire'
+        title: 'Hello Cheshire',
+        userName: req.user ? req.user.username : ''
     })
     //Only work render.
 };

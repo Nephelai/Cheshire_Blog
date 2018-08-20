@@ -24,7 +24,7 @@ var UserSchema = new Schema({
         ]
     },
     salt: String,
-    provide: {
+    provider: {
         // Local, Facebook, Naver etc..
         type: String,
         required: 'Provider is required'
@@ -79,8 +79,7 @@ UserSchema.static.findUniqueUsername = function (username, suffix, callback) {
 };
 
 UserSchema.set('toJSON', {
-    getters: true,
-    virtuals: true
+    getters: true
 });
 
 // 'Define User Model and Register in mongoose

@@ -2,7 +2,7 @@
   "name": "cheshire_blog",
   "version": "1.0.0",
   "dependencies": {
-    "mongoose": "^5.1.6",
+    "mongoose": "^5.2.9",
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
     "ejs": "^2.6.1",
@@ -11,7 +11,8 @@
     "method-override": "^3.0.0",
     "morgan": "^1.9.0",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "connect-flash": "^0.1.1"
   },
   "description": "MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)",
   "main": "server.js",

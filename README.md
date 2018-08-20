@@ -32,6 +32,7 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 ### Passport (In Local Strategy)
 * passport's strategies store in config/strategies. Must separate Logip
 * First set strategy and then set passport(register in passport)
+* Using Connect Module to save data in session. Message that saved in flash object removed after show in user.
 
 
 ***

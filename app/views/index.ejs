@@ -5,6 +5,13 @@
     <title><%= title %></title>
 </head>
 <body>
-    <h1><%= title %></h1>
+    <% if(userName) { %>
+        <h2>Hello <%= userName %></h2>
+        <a href="/signout">Sign Out</a>
+    <% } else { %>
+        <h2>Hello <%= userName %></h2>
+        <a href="/signup">Sign Up</a>
+        <a href="/signin">Sign In</a>
+    <% } %>
 </body>
 </html>

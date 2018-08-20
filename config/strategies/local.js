@@ -13,7 +13,7 @@ module.exports = function () {
                     message: 'Unknown User'
                 });
             }
-            if(!user.authentication(password)) {
+            if(!user.authenticate(password)) {
                 return done(null, false, {
                     message: 'Invaild Password'
                 });
