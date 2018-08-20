@@ -2,14 +2,14 @@
   "name": "cheshire_blog",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.16.3",
-    "morgan": "^1.9.0",
-    "compression": "^1.7.3",
+    "mongoose": "^5.1.6",
     "body-parser": "^1.18.3",
-    "method-override": "^3.0.0",
+    "compression": "^1.7.3",
     "ejs": "^2.6.1",
+    "express": "^4.16.3",
     "express-session": "^1.15.6",
-    "mongoose": "^5.2.9"
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.0"
   },
   "description": "MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)",
   "main": "server.js",
