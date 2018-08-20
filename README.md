@@ -29,5 +29,10 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * post middle ware do after the some operation. example. after save data, logging data.
 * Mongoose's DBref is used like 'join' operation. manage this like inheritance.
 
+### Passport (In Local Strategy)
+* passport's strategies store in config/strategies. Must separate Logip
+* First set strategy and then set passport(register in passport)
+
+
 ***
 ## Created By Cheshire. Updated 18-08-20
