@@ -30,7 +30,7 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * Mongoose's DBref is used like 'join' operation. manage this like inheritance.
 
 ### Passport (In Local Strategy)
-* passport's strategies store in config/strategies. Must separate Logip
+* passport's strategies store in config/strategies. Must separate login way.
 * First set strategy and then set passport(register in passport)
 * Using Connect Module to save data in session. Message that saved in flash object removed after show in user.
 
