@@ -35,6 +35,7 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * Using Connect Module to save data in session. Message that saved in flash object removed after show in user.
 
 ### Winston (logger)
+* Required winston's Config and get Instance of it. than you can use logger. (info, err)
 
 ***
 ## Created By Cheshire. Updated 18-08-21
