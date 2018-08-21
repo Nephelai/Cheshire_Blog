@@ -34,6 +34,7 @@ MongoDB, Express, Angular, NodeJS. (Maybe Angular 6)
 * First set strategy and then set passport(register in passport)
 * Using Connect Module to save data in session. Message that saved in flash object removed after show in user.
 
+### Winston (logger)
 
 ***
 ## Created By Cheshire. Updated 18-08-21

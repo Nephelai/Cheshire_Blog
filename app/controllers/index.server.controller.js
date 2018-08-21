@@ -1,7 +1,9 @@
-exports.render = function (req, res) {
+var winston = require('../../config/winston'),
+    logger = winston();
 
+exports.render = function (req, res) {
     if(req.session.lastVisit) {
-        console.log(req.session.lastVisit);
+        logger.info(req.session.lastVisit);
     }
     else {
         var ip = req.headers['x-forwarded-for'] ||
@@ -14,7 +16,7 @@ exports.render = function (req, res) {
             ip = nyIP;
         }
 
-        console.log(ip);
+        logger.info(ip);
     }
     req.session.lastVisit = new Date();
 

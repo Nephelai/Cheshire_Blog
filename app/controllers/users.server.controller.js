@@ -1,5 +1,7 @@
 var User = require('mongoose').model('User'),
-    passport = require('passport');
+    passport = require('passport'),
+    winston = require('../../config/winston'),
+    logger = winston();
 
 var getErrorMessage = function (err) {
     var message = '';
@@ -25,6 +27,7 @@ var getErrorMessage = function (err) {
 
 exports.renderSignin = function (req, res, next) {
     if(!req.user) {
+        logger.info('Open Sign in Form');
         res.render('signin', {
             title: 'Sign-in Form',
             messages: req.flash('error') || req.flash('info')
@@ -35,6 +38,7 @@ exports.renderSignin = function (req, res, next) {
 
 exports.renderSignup = function (req, res, next) {
     if(!req.user) {
+        logger.info('Open Sign up Form');
         res.render('signup', {
             title: 'Sign-up Form',
             messages: req.flash('error')
@@ -52,9 +56,11 @@ exports.signup = function (req, res, next) {
             if(err) {
                 message = getErrorMessage(err);
 
+                logger.error(message);
                 req.flash('error', message);
                 return res.redirect('/signup');
             }
+            logger.info('Successfully Signup');
             req.login(user, function (err) {
                 if(err) return next(err);
                 return res.redirect('/');
@@ -67,6 +73,7 @@ exports.signup = function (req, res, next) {
 
 exports.signout = function (req, res) {
     req.logout();
+    logger.info('Successfully Logout');
     res.redirect('/');
 };
 
